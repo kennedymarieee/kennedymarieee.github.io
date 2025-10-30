@@ -34,22 +34,22 @@
         createPlatform(400,575,150,20,);
         createPlatform(150,475,200,40,);
         createPlatform(600,700,250,20,);
-        createPlatform(1200,200,300,30,);
-        createPlatform(725,300,300,20);   
+        createPlatform(950,300,400,30,);
+        createPlatform(425,400,450,20);   
 
 
 
     // TODO 3 - Create Collectables
       createCollectable("kennedi",1100,200);
       createCollectable("steve",350,500);
-      createCollectable("diamond",650,200);
+      createCollectable("diamond",650,325);
 
 
     
     // TODO 4 - Create Cannons
-       createCannon("bottom",720,120);
-       createCannon("right",350,620);
-       createCannon("left",1050,250);
+       createCannon("left",720,120);
+       createCannon("right",200,620);
+       createCannon("right",500,900,);
 
     
     

@@ -8,7 +8,7 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-color: rgb(234, 223, 102);
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -59,7 +59,7 @@
           box.css("left", newPositionX);
         }
 
-        // changes the text displayed on the Box
+        // changes the text displayed on the Box//
         function changeBoxText(newText) {
           box.text(newText);
         }
@@ -69,7 +69,11 @@
         //////////////////////////////////////////////////////////////////
 
         // TODO 2 - Variable declarations
+        var positionX = 0;
+        var points = 0;
+        var speed = 10; 
 
+   
 
 
 
@@ -79,7 +83,9 @@
          * Each time it is called, it should move the Box to a new location.
          * If the box drifts off the screen, turn it around!
          */
-        function update() {
+        function update() { 
+          positionX = positionX + 10; 
+          moveBoxTo(positionX);
 
         
 
@@ -94,6 +100,9 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
+          positionX = 0;
+          changeBoxText(points);
+          points++;
 
 
 

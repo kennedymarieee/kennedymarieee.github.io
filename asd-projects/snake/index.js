@@ -155,7 +155,13 @@ repositionSquare(snake.head);
 }
 
 // TODO 9: Create a new helper function
-
+function moveBodyAToBodyB(bodyA, bodyB){
+ console.log("Moving body A to body B...");
+setTimeout(() => {
+  moveBodyAToBodyB(snake.body[1], snake.head);
+  repositionSquare(snake.body[1]);
+}, 2_000);
+}
 
 
 
